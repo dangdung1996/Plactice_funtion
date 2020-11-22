@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Max and trung binh</title>
+</head>
+<body>
+<script>
+    let arr = [2, 3, 62, 3, 99, 35, 1, 32, 36, 8];
+    let max = arr[0];
+    let i;
+    let sumtb = 0;
+    for (i = 0; i < arr.length;i++) {
+        if (max < arr[i]) {
+            max = arr[i];
+            sumtb=sumtb+arr[i];
+        }
+    }
+    document.write("Giá trị lớn nhất là :" + max + "Trung bình: "+ sumtb/arr.length);
+
+
+</script>
+</body>
+</html>
